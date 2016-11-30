@@ -2,7 +2,7 @@
 
 const webpack = require('webpack');
 
-const library = 'cspaceUIPlugin';
+const library = 'cspaceUIPluginRecordTypePropagation';
 const isProduction = process.env.NODE_ENV === 'production';
 const filename = `${library}${isProduction ? '.min' : ''}.js`;
 
