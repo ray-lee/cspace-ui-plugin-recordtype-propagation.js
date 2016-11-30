@@ -1,0 +1,28 @@
+{
+  "presets": [
+    "es2015",
+    "react"
+  ],
+  "plugins": [
+    "dev-expression",
+    "transform-object-rest-spread",
+    [
+      "react-intl", {
+        "messagesDir": "./build/messages/"
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "istanbul", {
+            "include": [
+              "src/**/*.(js|jsx)"
+            ]
+          }
+        ]
+      ]
+    }
+  }
+}
