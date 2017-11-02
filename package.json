@@ -1,6 +1,6 @@
 {
   "name": "cspace-ui-plugin-recordtype-propagation",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CollectionSpace UI propagation record type plugin",
   "author": "Ray Lee <rhlee@berkeley.edu>",
   "license": "ECL-2.0",

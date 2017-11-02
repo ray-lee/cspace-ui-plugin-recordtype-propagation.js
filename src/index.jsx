@@ -7,7 +7,12 @@ module.exports = () => (pluginContext) => {
     recordTypes: {
       propagation: {
         serviceConfig: {
-          name: 'propagations',
+          serviceName: 'Propagations',
+          servicePath: 'propagations',
+          serviceType: 'procedure',
+
+          objectName: 'Propagation',
+          documentName: 'propagations',
         },
         messages: {
           name: {
