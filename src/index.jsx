@@ -1,7 +1,7 @@
-module.exports = () => (context) => {
+module.exports = () => (pluginContext) => {
   const {
     React,
-  } = context;
+  } = pluginContext.lib;
 
   return {
     recordTypes: {
@@ -9,15 +9,18 @@ module.exports = () => (context) => {
         serviceConfig: {
           name: 'propagations',
         },
-        messageDescriptors: {
-          recordNameTitle: {
-            id: 'record.propagation.nameTitle',
-            description: 'The name of the record when used as a title.',
+        messages: {
+          name: {
+            id: 'record.propagation.name',
             defaultMessage: 'Propagation',
+          },
+          collectionName: {
+            id: 'record.propagation.collectionName',
+            defaultMessage: 'Propagations',
           },
         },
         forms: {
-          default: <div/>,
+          default: <div />,
         },
         title: () => '',
       },
